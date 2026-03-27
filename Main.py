@@ -568,7 +568,7 @@ class SkyClarity(Calibrate):
                 continue
 
             c = wobs / wcat
-            c_scaled = np.clip(c * 1.2, 0.0, 1.0)
+            c_scaled = np.clip(c, 0.0, 1.0)
             err = np.sqrt(c * (1 - c) / wcat)
 
             cvis[p] = float(c_scaled)
