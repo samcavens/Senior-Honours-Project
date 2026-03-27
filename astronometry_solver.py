@@ -3,7 +3,7 @@
 Batch-solve all-sky FITS images with astrometry.net.
 
 For each FITS file in raw_dir, the script:
-1. Opens the image and header.
+1. Opens the image and header
 2. Makes a circular central crop to focus the solve on the useful sky region.
 3. Estimates the RA/Dec of the zenith from the FITS header time and location.
 4. Runs astrometry.net solve-field using that RA/Dec as a starting guess.
